@@ -2,13 +2,13 @@ name: Github Action for a Dojo Update
 description: GitHub Action for a dojo update
 author: pwn.college
 inputs:
-  dojo_site:
+  site:
     description: The site hosting the dojo
     default: https://dojo.pwn.college
-  dojo_reference_id:
+  dojo:
     description: The reference id of the dojo
     required: true
-  dojo_update_code:
+  update_code:
     description: The update code of the dojo
     required: true
 runs:
