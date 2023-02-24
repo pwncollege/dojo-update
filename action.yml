@@ -18,7 +18,7 @@ runs:
     - -s
     - -X
     - POST
-    - ${{ inputs.dojo_site }}/dojo/${{ inputs.dojo_reference_id }}}/update/${{ inputs.dojo_update_code }}
+    - ${{ inputs.site }}/dojo/${{ inputs.dojo }}/update/${{ inputs.update_code }}
 branding:
   icon: arrow-up
   color: blue
