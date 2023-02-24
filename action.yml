@@ -1,0 +1,24 @@
+name: Github Action for a Dojo Update
+description: GitHub Action for a dojo update
+author: pwn.college
+inputs:
+  dojo_site:
+    description: The site hosting the dojo
+    default: https://dojo.pwn.college
+  dojo_reference_id:
+    description: The reference id of the dojo
+    required: true
+  dojo_update_code:
+    description: The update code of the dojo
+    required: true
+runs:
+  using: docker
+  image: docker://alpine/curl:latest
+  args:
+    - -s
+    - -X
+    - POST
+    - ${{ inputs.dojo_site }}/dojo/${{ inputs.dojo_reference_id }}}/update/${{ inputs.dojo_update_code }}
+branding:
+  icon: arrow-up
+  color: blue
