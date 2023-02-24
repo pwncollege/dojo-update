@@ -15,8 +15,9 @@ runs:
   using: docker
   image: docker://alpine/curl:latest
   args:
-    - -s
-    - -X
+    - --silent
+    - --fail-with-body
+    - --request
     - POST
     - ${{ inputs.site }}/dojo/${{ inputs.dojo }}/update/${{ inputs.update_code }}
 branding:
