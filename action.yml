@@ -4,7 +4,7 @@ author: pwn.college
 inputs:
   site:
     description: The site hosting the dojo
-    default: https://dojo.pwn.college
+    default: https://pwn.college
   dojo:
     description: The reference id of the dojo
     required: true
