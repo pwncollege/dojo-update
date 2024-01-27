@@ -22,7 +22,12 @@ jobs:
 
 ### Inputs
 - `dojo`: The reference id of your dojo, for example `official-dojo` or `unofficial-dojo~1a2b3c4d`.
-- `update_code`: The update code of your dojo.
+- `update_code`: The update code of your dojo. This can be found by looking at the "Update" link
+in the dojo's Admin page. It will look like
+
+```
+https://pwn.college/dojo/DOJO_NAME/update/UPDATE_CODE
+```
 
 The `update_code` should be a secret, so you should [add it to your repository's secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets?tool=webui#creating-encrypted-secrets-for-a-repository).
 In the above example, the secret has been named `UPDATE_CODE`.
